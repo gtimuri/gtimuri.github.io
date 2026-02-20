@@ -1,0 +1,80 @@
+/* ==========================================================
+   Portfolio 2 (korjick-style) — Custom Styles
+   Timur Gildeev · 2025
+   ========================================================== */
+
+/* Poppins as default font in about/skills section */
+.custom-font-1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Carousel card shadow */
+.custom-carousel-box-shadow-1 .card {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Equal-height cards in owl carousel */
+.custom-carousel-box-shadow-1 .owl-stage {
+    display: flex;
+}
+.custom-carousel-box-shadow-1 .owl-item {
+    display: flex;
+}
+.custom-carousel-box-shadow-1 .owl-item > div {
+    display: flex;
+    width: 100%;
+}
+.custom-carousel-box-shadow-1 .card {
+    width: 100%;
+}
+
+/* HH icon button */
+.custom-hh-icon {
+    font-family: 'Arial Black', 'Arial', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+/* Project cards hover effect */
+.custom-project-card {
+    transition: border-color 0.25s ease, transform 0.25s ease;
+    cursor: pointer;
+}
+.custom-project-card:hover {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: translateY(-4px);
+}
+
+/* Experience carousel — styled nav arrows */
+#nav-container .owl-prev,
+#nav-container .owl-next {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid #bbb;
+    background: transparent;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    margin-left: 6px;
+}
+#nav-container .owl-prev:hover,
+#nav-container .owl-next:hover {
+    background: #212121;
+    border-color: #212121;
+    color: #fff;
+}
+#nav-container .owl-prev.disabled,
+#nav-container .owl-next.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
