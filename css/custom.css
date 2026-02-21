@@ -78,3 +78,33 @@
     opacity: 0.3;
     pointer-events: none;
 }
+
+/* Language switcher */
+.custom-lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 14px;
+}
+.custom-lang-switcher a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 2px 4px;
+}
+.custom-lang-switcher a:hover {
+    color: #fff;
+}
+.custom-lang-switcher a.active {
+    color: #fff;
+    border-bottom: 1.5px solid rgba(255,255,255,0.7);
+}
+.custom-lang-switcher span {
+    color: rgba(255,255,255,0.3);
+    font-size: 0.75rem;
+}
